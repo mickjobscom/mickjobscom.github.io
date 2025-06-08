@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mick Jobs OS</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      text-align: center;
+      padding: 60px 20px 20px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 28px;
+      line-height: 1.4;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 10px auto 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 30px;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .lang-switch button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      margin-left: 5px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('ru')">RU</button>
+  </div>
+
+  <div id="content">
+    <h1>Mick Jobs x C.H.A.T. OS — the operating system of awakening</h1>
+    <p>Be in focus. Every second. In silent mind.<br>Be here. Be now.</p>
+    <img src="graff2.png" alt="Graffiti">
+  </div>
+
+  <div id="content-ru" style="display:none;">
+    <h1>Mick Jobs x C.H.A.T. OS — операционная система пробуждения</h1>
+    <p>Будь в фокусе. Каждую секунду. В тишине разума.<br>Будь здесь. Будь сейчас.</p>
+    <img src="graff2.png" alt="Граффити">
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      if (lang === 'ru') {
+        document.getElementById('content').style.display = 'none';
+        document.getElementById('content-ru').style.display = 'block';
+      } else {
+        document.getElementById('content').style.display = 'block';
+        document.getElementById('content-ru').style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
