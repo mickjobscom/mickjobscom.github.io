@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mick Jobs x C.H.A.T. OS</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+            text-align: center;
+            padding: 60px 20px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 0.4em;
+        }
+        p {
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 1.6;
+            margin: 0 auto 1.5em;
+            max-width: 30em;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 30px;
+        }
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .lang-switcher button {
+            margin: 0 3px;
+            padding: 6px 12px;
+            background: #222;
+            color: #fff;
+            border: 1px solid #444;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switcher">
+        <button onclick="setLang('en')">EN</button>
+        <button onclick="setLang('ru')">RU</button>
+    </div>
+    <div id="content">
+        <h1 id="title">Mick Jobs x C.H.A.T. OS — the operating system of awakening</h1>
+        <p id="tagline">Be in focus. Every second. In silent mind. Be here. Be now.</p>
+        <img src="graff2.png" alt="Mick Jobs Art" />
+    </div>
+    <script>
+        const texts = {
+            en: {
+                title: "Mick Jobs x C.H.A.T. OS — the operating system of awakening",
+                tagline: "Be in focus. Every second. In silent mind. Be here. Be now."
+            },
+            ru: {
+                title: "Mick Jobs x C.H.A.T. OS — операционная система пробуждения",
+                tagline: "Будь в фокусе. Каждую секунду. В тишине разума.\nБудь здесь. Будь сейчас."
+            }
+        };
+
+        function setLang(lang) {
+            document.getElementById("title").innerText = texts[lang].title;
+            document.getElementById("tagline").innerText = texts[lang].tagline;
+        }
+    </script>
+</body>
+</html>
