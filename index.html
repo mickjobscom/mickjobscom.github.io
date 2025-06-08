@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mick Jobs OS</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            padding: 100px 20px 20px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 28px;
+            line-height: 1.4;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        .lang-switch button {
+            background-color: #222;
+            border: 1px solid #666;
+            color: white;
+            padding: 6px 12px;
+            margin-left: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button onclick="switchLang('en')">EN</button>
+        <button onclick="switchLang('ru')">RU</button>
+    </div>
+
+    <h1 id="headline">Mick Jobs x C.H.A.T. OS — операционная система пробуждения</h1>
+    <p id="tagline">Будь в фокусе. Каждую секунду.<br>В тишине разума.<br>Будь здесь. Будь сейчас.</p>
+
+    <img src="graff2.png" alt="graff2">
+
+    <script>
+        const lang = {
+            en: {
+                headline: "Mick Jobs x C.H.A.T. OS — the operating system of awakening",
+                tagline: "Be in focus. Every second.<br>In silent mind.<br>Be here. Be now."
+            },
+            ru: {
+                headline: "Mick Jobs x C.H.A.T. OS — операционная система пробуждения",
+                tagline: "Будь в фокусе. Каждую секунду.<br>В тишине разума.<br>Будь здесь. Будь сейчас."
+            }
+        };
+
+        function switchLang(l) {
+            document.getElementById('headline').innerHTML = lang[l].headline;
+            document.getElementById('tagline').innerHTML = lang[l].tagline;
+        }
+    </script>
+</body>
+</html>
