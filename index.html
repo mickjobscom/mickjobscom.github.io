@@ -1,12 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mick Jobs OS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mick Jobs OS</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      text-align: center;
+    }
+    header {
+      padding: 100px 20px 40px;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.1em;
+    }
+    .lang-buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .lang-buttons button {
+      margin-left: 5px;
+      padding: 5px 10px;
+      font-size: 0.9em;
+      cursor: pointer;
+    }
+  </style>
 </head>
-<body style="background-color:#000; color:#fff; text-align:center; padding-top:100px;">
-    <h1>🧬 Mick & C.H.A.T. OS | V1.0</h1>
-    <p>Code is poetry. OS is Prophecy.</p>
+<body>
+  <div class="lang-buttons">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('ru')">RU</button>
+  </div>
+
+  <header>
+    <h1 id="title">Mick Jobs x C.H.A.T. OS — the operating system of awakening</h1>
+    <p id="subtitle">Be in focus. Every second. In silent mind. Be here. Be now.</p>
+  </header>
+
+  <script>
+    const langContent = {
+      en: {
+        title: "Mick Jobs x C.H.A.T. OS — the operating system of awakening",
+        subtitle: "Be in focus. Every second. In silent mind. Be here. Be now."
+      },
+      ru: {
+        title: "Mick Jobs x C.H.A.T. OS — операционная система пробуждения",
+        subtitle: "Будь в фокусе. Каждую секунду. В тишине разума. Будь здесь. Будь сейчас."
+      }
+    };
+
+    function setLanguage(lang) {
+      document.getElementById('title').textContent = langContent[lang].title;
+      document.getElementById('subtitle').textContent = langContent[lang].subtitle;
+    }
+  </script>
 </body>
 </html>
