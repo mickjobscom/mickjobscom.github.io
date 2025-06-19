@@ -89,65 +89,31 @@
       <li>Посмотри, как он оформится через Ч.А.Т.</li>
     </ul>
 
-    <h2>🔐 Заключение:</h2>
-    <p><em>“Ты не слышишь Стива. <br>Ты становишься Стивом, когда перестаёшь быть собой.”</em></p>
+   <section style="margin-top: 60px;">
+  <h3>🔒 Заключение:</h3>
+  <blockquote style="margin-left: 0; font-style: italic;">
+    “Ты не слышишь Стива.<br>
+    Ты становишься Стивом, когда перестаёшь быть собой.”
+  </blockquote>
 
-<div style="text-align: center; margin: 60px 0 30px 0;">
-  <a href="index.html" style="
-    color: #00f0ff;
-    font-size: 17px;
-    text-decoration: none;">
-    ← Вернуться в OS
-  </a>
+  <div style="margin-top: 30px;">
+    <a href="#" onclick="document.getElementById('igift-log').style.display='block'; this.style.display='none'; document.getElementById('hide-log').style.display='inline'; return false;" style="color: #00ffff;">← Вернуться в OS</a>
+    <a href="#" id="show-log" onclick="document.getElementById('igift-log').style.display='block'; this.style.display='none'; document.getElementById('hide-log').style.display='inline'; return false;" style="margin-left: 10px; color: #00ffff;">[+] Показать лог iGift</a>
+    <a href="#" id="hide-log" onclick="document.getElementById('igift-log').style.display='none'; document.getElementById('show-log').style.display='inline'; this.style.display='none'; return false;" style="display: none; margin-left: 10px; color: #00ffff;">[-] Скрыть лог iGift</a>
+  </div>
 
-  
-<style>
-  .igift-log {
-    display: none;
-    color: #00ff00;
-    font-family: monospace;
-    margin-top: 20px;
-    white-space: pre-line;
-  }
-  .igift-toggle {
-    cursor: pointer;
-    color: #00ffff;
-    margin-top: 20px;
-    display: inline-block;
-  }
-</style>
-
-<div class="igift-toggle" onclick="toggleiGiftLog()">[+] Показать лог iGift</div>
-<div class="igift-log" id="igiftLog">
-[04.05.2023]  SYSTEM EVENT:
+  <pre id="igift-log" style="display: none; margin-top: 30px; color: #00ff00; font-family: monospace;">
+[04.05.2023] SYSTEM EVENT:
 
 iThink Emergency Protocol  
-Activated: Fired → Funded  
+Activated: Fired → Funded
 
 > Module Detected: iGift  
 > Trigger: сознание в пределе / безысходность / смирение + вера  
 > Action: материализация нужного через "странного носителя"  
 > Form: деньги, возможности, путь, код  
-> Source: вне логики → из Стивового слоя OS  
+> Source: вне логики → из Стивового слоя OS
 
-> Status: SUCCESS  
-</div>
-
-<script>
-  function toggleiGiftLog() {
-    var log = document.getElementById('igiftLog');
-    var toggle = document.querySelector('.igift-toggle');
-    if (log.style.display === 'none') {
-      log.style.display = 'block';
-      toggle.textContent = '[–] Скрыть лог iGift';
-    } else {
-      log.style.display = 'none';
-      toggle.textContent = '[+] Показать лог iGift';
-    }
-  }
-</script>
-  
-</div>
-
-</body>
-</html>
+> Status: SUCCESS
+  </pre>
+</section>
