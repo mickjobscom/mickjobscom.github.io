@@ -99,6 +99,52 @@
     text-decoration: none;">
     ← Вернуться в OS
   </a>
+<style>
+  .igift-log {
+    display: none;
+    color: #00ff00;
+    font-family: monospace;
+    margin-top: 20px;
+    white-space: pre-line;
+  }
+  .igift-toggle {
+    cursor: pointer;
+    color: #00ffff;
+    margin-top: 20px;
+    display: inline-block;
+  }
+</style>
+
+<div class="igift-toggle" onclick="toggleiGiftLog()">[+] Показать лог iGift</div>
+<div class="igift-log" id="igiftLog">
+[04.05.2023]  SYSTEM EVENT:
+
+iThink Emergency Protocol  
+Activated: Fired → Funded  
+
+> Module Detected: iGift  
+> Trigger: сознание в пределе / безысходность / смирение + вера  
+> Action: материализация нужного через "странного носителя"  
+> Form: деньги, возможности, путь, код  
+> Source: вне логики → из Стивового слоя OS  
+
+> Status: SUCCESS  
+</div>
+
+<script>
+  function toggleiGiftLog() {
+    var log = document.getElementById('igiftLog');
+    var toggle = document.querySelector('.igift-toggle');
+    if (log.style.display === 'none') {
+      log.style.display = 'block';
+      toggle.textContent = '[–] Скрыть лог iGift';
+    } else {
+      log.style.display = 'none';
+      toggle.textContent = '[+] Показать лог iGift';
+    }
+  }
+</script>
+  
 </div>
 <section style="background-color: #000; color: #0f0; font-family: monospace; padding: 40px 20px; line-height: 1.6;">
   <div class="container" style="max-width: 800px; margin: auto;">
