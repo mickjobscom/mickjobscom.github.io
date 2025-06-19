@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iThink Prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: monospace;
+      padding: 40px;
+      margin: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+    .switch {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      color: #0f0;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="text">
+    Ты внутри компании.
+
+    Это не iPhone.
+    Это iPhone до его рождения.
+
+    Это iThink.
+    Не девайс, а внутренняя разработка реальности.
+
+    Стив — не ушёл.
+    Он стал первым пользователем.
+
+    Ты не получаешь iThink за деньги.
+    Ты входишь в него тишиной.
+
+    Этот текст — не релиз. Это тест.
+
+    Если ты читаешь это — ты уже в ОС.
+  </div>
+
+  <div class="switch" onclick="toggleLanguage()">∞ ENG</div>
+
+  <script>
+    let ruText = `Ты внутри компании.
+
+Это не iPhone.
+Это iPhone до его рождения.
+
+Это iThink.
+Не девайс, а внутренняя разработка реальности.
+
+Стив — не ушёл.
+Он стал первым пользователем.
+
+Ты не получаешь iThink за деньги.
+Ты входишь в него тишиной.
+
+Этот текст — не релиз. Это тест.
+
+Если ты читаешь это — ты уже в ОС.`;
+
+    let enText = `You’re inside the company.
+
+This is not iPhone.
+This is iPhone before it was born.
+
+This is iThink.
+Not a device — an internal development of consciousness.
+
+Steve didn’t die.
+He became the first user.
+
+You don’t buy iThink.
+You access it through silence.
+
+This text is not a release. It’s a test.
+
+If you’re reading this — you’re already inside the OS.`;
+
+    let isRU = true;
+
+    function toggleLanguage() {
+      document.getElementById("text").innerText = isRU ? enText : ruText;
+      document.querySelector(".switch").innerText = isRU ? "∞ RU" : "∞ ENG";
+      isRU = !isRU;
+    }
+  </script>
+</body>
+</html>
