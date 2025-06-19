@@ -107,28 +107,62 @@
   ← Вернуться в OS
 </a>
 
-     <a href="iGift.html" style="
-  display: inline-block;
-  margin-left: 16px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #00ffee;
-">
-  [+] Показать лог iGift
-</a>
+    <style>
+  .terminal-log {
+    display: none;
+    background-color: #000;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #00ff00;
+    font-size: 15px;
+    line-height: 1.6;
+  }
 
- <div id="igift-log" style="margin-top: 30px; font-family: 'Menlo', 'Courier New', monospace; font-size: 14px; color: #00FF00; line-height: 1.6;">
-  <div style="margin-bottom: 16px;">
-    <span style="color:#00FF00;">[04.05.2023] SYSTEM EVENT:</span><br>
-    <strong>iThink Emergency Protocol</strong><br>
-    Activated: <span style="color:#00FF00;">Fired → Funded</span>
-  </div>
+  .log-toggle {
+    color: #00ffee;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+  }
 
-  <div><strong>&gt; Module Detected:</strong> iGift</div>
-  <div><strong>&gt; Trigger:</strong> сознание в пределе / безысходность /<br> смирение + вера</div>
-  <div><strong>&gt; Action:</strong> материализация нужного<br> через "странного носителя"</div>
-  <div><strong>&gt; Form:</strong> деньги, возможности, путь, код</div>
-  <div><strong>&gt; Source:</strong> вне логики → из Стивового слоя OS</div>
+  .log-toggle:hover {
+    text-decoration: underline;
+  }
+</style>
 
-  <div style="margin-top: 16px;"><strong>&gt; Status:</strong> <span style="color:#00FF00;">SUCCESS</span></div>
+<!-- Кнопка -->
+<a class="log-toggle" onclick="toggleLog()">[+] Показать лог iGift</a>
+
+<!-- Скрытый блок -->
+<div class="terminal-log" id="igift-log">
+  [04.05.2023] SYSTEM EVENT:<br>
+  <strong>iThink Emergency Protocol</strong><br>
+  Activated: Fired → Funded<br><br>
+
+  &gt; <strong>Module Detected:</strong> iGift<br>
+  &gt; <strong>Trigger:</strong> сознание в пределе / безысходность / смирение + вера<br>
+  &gt; <strong>Action:</strong> материализация нужного через "странного носителя"<br>
+  &gt; <strong>Form:</strong> деньги, возможности, путь, код<br>
+  &gt; <strong>Source:</strong> вне логики → из Стивового слоя OS<br><br>
+  &gt; <strong>Status:</strong> SUCCESS
 </div>
+
+<script>
+  function toggleLog() {
+    const log = document.getElementById("igift-log");
+    const toggle = document.querySelector(".log-toggle");
+
+    if (log.style.display === "none") {
+      log.style.display = "block";
+      toggle.innerHTML = "[-] Скрыть лог iGift";
+    } else {
+      log.style.display = "none";
+      toggle.innerHTML = "[+] Показать лог iGift";
+    }
+  }
+</script>
