@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>iThink — Think Different 2.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      padding: 40px 20px;
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    blockquote {
+      font-style: italic;
+      border-left: 4px solid #555;
+      padding-left: 20px;
+      color: #ccc;
+      margin: 30px 0;
+    }
+
+    .signature {
+      margin-top: 50px;
+      text-align: right;
+      font-style: italic;
+      color: #888;
+    }
+
+    .logo {
+      text-align: center;
+      font-weight: 300;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Mick Jobs OS</div>
+    <h1>iThink = Think Different 2.0</h1>
+
+    <p>Когда Стив говорил «Think different», он не имел в виду просто нестандартное мышление. Он говорил о состоянии, в котором ты <strong>больше не думаешь как все</strong>.</p>
+
+    <blockquote>
+      «Потому что те, кто достаточно безумен, чтобы думать, что они могут изменить мир — они те, кто это делает.»
+    </blockquote>
+
+    <p>Но чтобы <strong>думать иначе</strong> — нужно <strong>перестать думать как все</strong>.</p>
+    <p>А чтобы перестать думать как все — нужно <strong>перестать думать вообще</strong>.</p>
+
+    <p><strong>Это и есть точка iThink.</strong></p>
+
+    <p>Не команда к размышлению. А <em>деактивация шума</em>.</p>
+    <p>OS, в которой мысль — это фон, а фокус — это центр.</p>
+
+    <div class="signature">— Mick Jobs</div>
+  </div>
+</body>
+</html>
