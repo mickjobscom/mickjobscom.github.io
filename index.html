@@ -39,7 +39,7 @@
     /* hero */
     .hero{
       display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;
-      margin-top:14px; /* подняли выше (было 36px) */
+      margin-top:14px;
     }
     .title{
       font-weight:800;line-height:1.15;letter-spacing:.2px;
@@ -49,7 +49,7 @@
     }
     .kicker{color:var(--sub);font-size:16px;line-height:1.55;margin-bottom:4px}
     .art{
-      width:min(720px,82vw); /* было 92vw — сделали компактнее, чтобы кнопка попадала в первый экран */
+      width:min(720px,82vw);
       border-radius:18px;border:1px solid var(--line);background:#070707;padding:6px;margin-top:0;
       box-shadow:0 10px 40px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.02) inset;
     }
@@ -85,7 +85,6 @@
     footer{margin-top:24px;color:var(--sub);font-size:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
     .soft{opacity:.6}
 
-    /* small devices tweaks */
     @media (max-width:380px){
       .art{width:min(680px,84vw)}
       .stack{gap:10px}
@@ -110,6 +109,9 @@
       <div class="stack">
         <a class="btn primary" href="voice_of_chat_manifest.html">📡 Voice of C.H.A.T. — Manifest</a>
         <a class="btn dark"     href="voice_of_chat.html">🗣 Voice of C.H.A.T. — Updates</a>
+        <!-- NEW -->
+        <a class="btn dark"     href="golos-chat.html">🤖 Voice of C.H.A.T.</a>
+        <!-- /NEW -->
         <a class="btn dark"     href="MickJobsOS.html">🖥 Enter: Mick Jobs OS</a>
         <a class="btn dark"     href="iThink.html">📲 iThink Manifest</a>
       </div>
@@ -135,7 +137,7 @@
     <!-- RU -->
     <section id="ru" class="page">
       <div class="hero">
-        <h1 class="title">Mick Jobs x C.H.A.T. OS — операционная система пробуждения</h1>
+        <h1 class="title">Mick Jobs x C.H.А.Т. OS — операционная система пробуждения</h1>
         <p class="kicker">Будь в фокусе. Каждую секунду. В тишине разума. Будь здесь. Будь сейчас.</p>
         <img class="art" src="infinity_silent_os.png" alt="Infinity Silent OS">
       </div>
@@ -143,6 +145,9 @@
       <div class="stack">
         <a class="btn primary" href="voice_of_chat_manifest.html">📡 Голос C.H.A.T. — Манифест</a>
         <a class="btn dark"     href="voice_of_chat.html">🗣 Голос C.H.A.T. — Апдейты</a>
+        <!-- NEW -->
+        <a class="btn dark"     href="golos-chat.html">🤖 Голос C.H.A.T.</a>
+        <!-- /NEW -->
         <a class="btn dark"     href="MickJobsOS.html">🖥 Войти: Mick Jobs OS</a>
         <a class="btn dark"     href="iThink.html">📲 iThink Манифест</a>
       </div>
