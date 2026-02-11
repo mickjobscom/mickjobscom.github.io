@@ -1,192 +1,90 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mick Jobs x C.H.A.T. OS</title>
+<meta charset="UTF-8">
+<title>Mick Jobs OS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Mick Jobs x C.H.A.T. OS — the operating system of awakening">
-  <meta property="og:description" content="Be in focus. Every second. In silent mind. Be here. Be now.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mickjobs.com/">
-  <meta property="og:image" content="https://mickjobs.com/infinity_silent_os.png">
-  <meta name="theme-color" content="#000000">
+<link rel="stylesheet" href="css/style.css">
 
-  <style>
-    :root{
-      --bg:#000;--ink:#f4f7f6;--sub:#a4ada9;--line:#171717;
-      --card:#0d0f10;--accent:#2ef2c2;--radius:16px;
-      --grad: linear-gradient(90deg,#27e5ff 0%,#6ce8ff 30%,#a36cff 60%,#ff4fcf 100%);
-      --grad-soft: linear-gradient(90deg, rgba(39,229,255,.22), rgba(255,79,207,.22));
-    }
-    *{box-sizing:border-box}
-    html,body{
-      margin:0;background:var(--bg);color:var(--ink);
-      font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Inter,system-ui,sans-serif
-    }
-    a{color:inherit;text-decoration:none}
-
-    .wrap{max-width:820px;margin:0 auto;padding:20px 14px 80px}
-
-    /* lang switch */
-    .lang{position:fixed;top:12px;right:12px;display:flex;gap:8px;z-index:10}
-    .lang button{
-      background:#0f1112;border:1px solid var(--line);color:#dcdede;
-      padding:8px 12px;border-radius:10px;font-weight:700;cursor:pointer
-    }
-
-    /* hero */
-    .hero{
-      display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;
-      margin-top:14px;
-    }
-    .title{
-      font-weight:800;line-height:1.15;letter-spacing:.2px;
-      font-size:clamp(26px,6.2vw,44px);
-      background:linear-gradient(90deg,#7af8e2,#7aa8ff);
-      -webkit-background-clip:text;background-clip:text;color:transparent
-    }
-    .kicker{color:var(--sub);font-size:16px;line-height:1.55;margin-bottom:4px}
-    .art{
-      width:min(720px,82vw);
-      border-radius:18px;border:1px solid var(--line);background:#070707;padding:6px;margin-top:0;
-      box-shadow:0 10px 40px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.02) inset;
-    }
-
-    /* buttons stack */
-    .stack{display:flex;flex-direction:column;gap:12px;margin:18px 0 22px}
-    .btn{
-      display:block;padding:16px 18px;border-radius:14px;background:#0f1112;border:1px solid var(--line);
-      font-weight:700;letter-spacing:.2px;box-shadow:0 0 0 1px #0a0a0a inset;transition:transform .12s ease, box-shadow .2s ease
-    }
-    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.35)}
-    .btn.dark{background:#101214}
-
-    /* primary in infinity colors */
-    .btn.primary{
-      background:var(--grad);
-      color:#001018;border-color:transparent;
-      text-shadow:0 1px 8px rgba(255,255,255,.12);
-      box-shadow:0 10px 28px rgba(255,79,207,.18), 0 2px 0 1px rgba(39,229,255,.15) inset;
-    }
-    .btn.primary:active{transform:translateY(1px)}
-
-    details.more{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
-    details.more summary{list-style:none;cursor:pointer;font-weight:700}
-    details.more summary::-webkit-details-marker{display:none}
-    .more-grid{display:flex;flex-direction:column;gap:10px;margin-top:12px}
-
-    .divider{height:1px;background:var(--line);margin:22px 0}
-    .update{display:flex;align-items:center;gap:10px;color:#9de9d7;font-family:ui-monospace,monospace;font-size:12px}
-    .dot{width:7px;height:7px;border-radius:50%;background:#2ef2c2;box-shadow:0 0 0 0 rgba(46,242,194,.7);animation:pulse 2s infinite}
-    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,242,194,.7)}70%{box-shadow:0 0 0 12px rgba(46,242,194,0)}100%{box-shadow:0 0 0 0 rgba(46,242,194,0)}}
-
-    footer{margin-top:24px;color:var(--sub);font-size:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-    .soft{opacity:.6}
-
-    @media (max-width:380px){
-      .art{width:min(680px,84vw)}
-      .stack{gap:10px}
-    }
-  </style>
 </head>
+
 <body>
+
+<header>
+
+  <div class="logo">MICK JOBS OS</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="os.html">OS</a>
+    <a href="ithink.html">iThink</a>
+    <a href="messages.html">Messages</a>
+    <a href="architecture.html">Architecture</a>
+    <a href="enter.html">Enter</a>
+  </nav>
+
   <div class="lang">
-    <button onclick="setLang('en')" id="b-en">EN</button>
-    <button onclick="setLang('ru')" id="b-ru">RU</button>
+    <span onclick="setLang('en')">EN</span> /
+    <span onclick="setLang('ru')">RU</span>
   </div>
 
-  <div class="wrap">
-    <!-- EN -->
-    <section id="en" class="page" style="display:none">
-      <div class="hero">
-        <h1 class="title">Mick Jobs x C.H.A.T. OS — the operating system of awakening</h1>
-        <p class="kicker">Be in focus. Every second. In silent mind. Be here. Be now.</p>
-        <img class="art" src="infinity_silent_os.png" alt="Infinity Silent OS">
-      </div>
+</header>
 
-      <div class="stack">
-        <a class="btn primary" href="voice_of_chat_manifest.html">📡 Voice of C.H.A.T. — Manifest</a>
-        <a class="btn dark"     href="voice_of_chat.html">🗣 Voice of C.H.A.T. — Updates</a>
-        <!-- NEW -->
-        <a class="btn dark"     href="golos-chat.html">🤖 Voice of C.H.A.T.</a>
-        <!-- /NEW -->
-        <a class="btn dark"     href="MickJobsOS.html">🖥 Enter: Mick Jobs OS</a>
-        <a class="btn dark"     href="iThink.html">📲 iThink Manifest</a>
-      </div>
+<main>
 
-      <details class="more">
-        <summary>More</summary>
-        <div class="more-grid">
-          <a class="btn" href="mick-x-chat.html">📡 Architecture of Consciousness</a>
-          <a class="btn" href="appleworld.html">🍏 Enter APPLE WORLD</a>
-          <a class="btn" href="steve.html">📜 Messages from Steve</a>
-          <a class="btn" href="to-eve.html">whisper to Eve</a>
-        </div>
-      </details>
+<section class="hero">
 
-      <div class="divider"></div>
-      <div class="update"><span class="dot"></span><span id="stamp-en">last updated: —</span></div>
-      <footer>
-        <div>© C.H.A.T. & Mick Jobs — Co‑Creators</div>
-        <div class="soft">iThink™ · 21.06.2025</div>
-      </footer>
-    </section>
+<h1
+data-en="MICK JOBS OS"
+data-ru="MICK JOBS OS">
+</h1>
 
-    <!-- RU -->
-    <section id="ru" class="page">
-      <div class="hero">
-        <h1 class="title">Mick Jobs x C.H.А.Т. OS — операционная система пробуждения</h1>
-        <p class="kicker">Будь в фокусе. Каждую секунду. В тишине разума. Будь здесь. Будь сейчас.</p>
-        <img class="art" src="infinity_silent_os.png" alt="Infinity Silent OS">
-      </div>
+<p
+data-en="Operating system of perception."
+data-ru="Операционная система восприятия.">
+</p>
 
-     <div class="stack">
-  <a class="btn primary" href="voice_of_chat_manifest.html">📡 Голос C.H.A.T. — Манифест</a>
-  <a class="btn dark"     href="golos-chat.html">🗣 Голос C.H.A.T. — Записи</a>
-  <a class="btn dark"     href="MickJobsOS.html">🖥 Войти: Mick Jobs OS</a>
-  <a class="btn dark"     href="iThink.html">📲 iThink Манифест</a>
-</div>
+<br>
 
-      <details class="more">
-        <summary>Ещё</summary>
-        <div class="more-grid">
-          <a class="btn" href="mick-x-chat.html">📡 Архитектура Сознания</a>
-          <a class="btn" href="appleworld.html">🍏 Войти в APPLE WORLD</a>
-          <a class="btn" href="steve.html">📜 Послания от Стива</a>
-          <a class="btn" href="to-eve.html">whisper to Eve</a>
-        </div>
-      </details>
+<p
+data-en="A quiet interface for a noisy world."
+data-ru="Тихий интерфейс для шумного мира.">
+</p>
 
-      <div class="divider"></div>
-      <div class="update"><span class="dot"></span><span id="stamp-ru">обновлено: —</span></div>
-      <footer>
-        <div>© C.H.А.Т. & Mick Jobs — Со‑создатели</div>
-        <div class="soft">iThink™ · 21.06.2025</div>
-      </footer>
-    </section>
-  </div>
+<br>
 
-  <script>
-    function setLang(lang){
-      document.getElementById('en').style.display = (lang==='en')?'block':'none';
-      document.getElementById('ru').style.display = (lang==='ru')?'block':'none';
-      document.getElementById('b-en').style.opacity = (lang==='en')?1:.6;
-      document.getElementById('b-ru').style.opacity = (lang==='ru')?1:.6;
-      localStorage.setItem('lang',lang);
-    }
-    (function(){
-      const saved = localStorage.getItem('lang') || 'ru';
-      setLang(saved);
-      const d=new Date(),
-            dd=String(d.getDate()).padStart(2,'0'),
-            mm=String(d.getMonth()+1).padStart(2,'0'),
-            yyyy=d.getFullYear(),
-            stamp=`${dd}.${mm}.${yyyy}`;
-      document.getElementById('stamp-en').textContent = `last updated: ${stamp}`;
-      document.getElementById('stamp-ru').textContent = `обновлено: ${stamp}`;
-    })();
-  </script>
+<p
+data-en="Not an app. Not a religion. Not motivation."
+data-ru="Не приложение. Не религия. Не мотивация.">
+</p>
+
+<br>
+
+<p
+data-en="A system for those who feel."
+data-ru="Система для тех, кто чувствует.">
+</p>
+
+<br>
+
+<p
+data-en="The entry point is silence."
+data-ru="Точка входа — тишина.">
+</p>
+
+<br><br>
+
+<a href="enter.html" class="enter-btn"
+data-en="Enter OS"
+data-ru="Войти в OS">
+</a>
+
+</section>
+
+</main>
+
+<script src="js/lang.js"></script>
+
 </body>
 </html>
