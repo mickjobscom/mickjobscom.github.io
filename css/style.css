@@ -225,3 +225,37 @@ body {
   letter-spacing: 3px;
   opacity: 0.6;
 }
+
+/* ===== OS PAGE TYPOGRAPHY UPGRADE ===== */
+
+.os h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.os h2 {
+  font-size: 18px;
+  letter-spacing: 4px;
+  opacity: 0.6;
+  margin-bottom: 40px;
+}
+
+.os p {
+  font-size: 22px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+  color: rgba(255,255,255,0.9);
+}
+
+.os ul {
+  margin: 32px 0 48px;
+  padding-left: 1.2em;
+}
+
+.os li {
+  font-size: 22px;
+  margin-bottom: 14px;
+  opacity: 0.87;
+}
